@@ -1,6 +1,10 @@
 function getLargestElementAtProperty(obj, key) {
-    // your code here
-    
+    if (!obj[key] || !Array.isArray(obj[key]) || obj[key].length == 0) {
+      return [];
+    } else {
+      let sorted = obj[key].sort(function(a,b) { return a-b; });
+      return sorted[obj[key].length - 1];
+    }
 }
 
 let obj = {

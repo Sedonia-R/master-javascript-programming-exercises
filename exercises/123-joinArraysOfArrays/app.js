@@ -1,6 +1,6 @@
 function joinArrayOfArrays(arr) {
   // your code here
-  
+  return arr.flat();
 }
 
 let output = joinArrayOfArrays([
@@ -10,3 +10,4 @@ let output = joinArrayOfArrays([
 ]);
 
 console.log(output); // --> [1, 4, true, false, 'x', 'y']
+

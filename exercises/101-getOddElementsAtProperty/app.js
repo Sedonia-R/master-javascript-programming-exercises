@@ -1,6 +1,11 @@
 function getOddElementsAtProperty(obj, key) {
     // your code here
-    
+    if (!obj[key] || !Array.isArray(obj[key]) || obj[key].length == 0) {
+      return [];
+    } else {
+      let oddLength = obj[key].filter (element => element % 2 != 0);
+      return oddLength;
+    }
 }
 
 let obj = {
